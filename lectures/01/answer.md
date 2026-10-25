@@ -11,17 +11,19 @@
 - 取り組んだレベル：基礎
 - やったこと：モデルやTEMPERATUREを切り替えて出力を確認
 - 結果：
-【モデル別】
-実行コマンド：AIE_MODEL=gemini-3.8-flash uv run python -m app.ask "LoRAとは何ですか？"
+
+- 【モデル別】
+- 実行コマンド：AIE_MODEL=gemini-3.8-flash uv run python -m app.ask "LoRAとは何ですか？"
 ⇒背景、仕組み、メリット、使われ方と詳細に説明してくれている。また具体例を挙げての理解しやすくしてくれている。
 
-実行コマンド：AIE_MODEL=gemini-3.5-flash-lite uv run python -m app.ask "LoRAとは何ですか？"
+- 実行コマンド：AIE_MODEL=gemini-3.5-flash-lite uv run python -m app.ask "LoRAとは何ですか？"
 ⇒要点をコンパクトに説明してくれてるが、詳細の説明については割愛されている。
 
-【AIE_TEMPERATURE別(※モデルはgemini-3.5-flash-liteで固定)】
-実行コマンド：AIE_MODEL=gemini-3.5-flash-lite AIE_TEMPERATURE=0.0 uv run python -m app.ask "LoRAとは何ですか？"
-実行コマンド：AIE_MODEL=gemini-3.5-flash-lite AIE_TEMPERATURE=1.0 uv run python -m app.ask "LoRAとは何ですか？"
-実行コマンド：AIE_MODEL=gemini-3.5-flash-lite AIE_TEMPERATURE=2.0 uv run python -m app.ask "LoRAとは何ですか？"
+- 【AIE_TEMPERATURE別(※モデルはgemini-3.5-flash-liteで固定)】
+- 実行コマンド：AIE_MODEL=gemini-3.5-flash-lite AIE_TEMPERATURE=0.0 uv run python -m app.ask "LoRAとは何ですか？"
+- 実行コマンド：AIE_MODEL=gemini-3.5-flash-lite AIE_TEMPERATURE=1.0 uv run python -m app.ask "LoRAとは何ですか？"
+- 実行コマンド：AIE_MODEL=gemini-3.5-flash-lite AIE_TEMPERATURE=2.0 uv run python -m app.ask "LoRAとは何ですか？"
+
 ⇒内容自体はどれも正しそうになっている。値が大きいからといって、創造的な回答にはなっていなそう。
 　temperatureがコマンドとして、受け入れてはいることは確認できるが、出力に効いているいるかは別の質問で検証する必要あり。
 
